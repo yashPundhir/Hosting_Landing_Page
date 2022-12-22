@@ -57,11 +57,22 @@
 }
 
 .btn {
-	background-color: #fff;
+	background-color: transparent;
 	height: 45px;
 	width: 150px;
 	font-size: 15px;
-	border-radius: 8px;
+	border-radius: 6px;
+	border: 1.5px double transparent;
+	background-image: linear-gradient(#fff, #fff),
+		radial-gradient(circle at top, #09bcf8, #056aeb);
+	background-origin: border-box;
+	background-clip: padding-box, border-box;
+}
+.text-gradient {
+	font-weight: 700;
+	background: linear-gradient(to bottom right, #09bcf8, #056aeb);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .component-1 {
@@ -347,13 +358,17 @@
 	font-weight: 700;
 }
 
-.purchase-plan-pricing-info button {
-	background-color: #fff;
+.purchase-plan-pricing-info .sp-button {
+	background-color: transparent;
 	width: 180px;
 	height: 50px;
 	font-size: 14px;
-	font-weight: 700;
 	border-radius: 8px;
+	border: 1.5px double transparent;
+	background-image: linear-gradient(#fff, #fff),
+		radial-gradient(circle at top, #09bcf8, #056aeb);
+	background-origin: border-box;
+	background-clip: padding-box, border-box;
 }
 
 .purchase-plan-2-heading {
@@ -865,8 +880,8 @@
 		margin-bottom: 30px;
 		font-weight: 700;
 	}
-	.purchase-plan-pricing-info button {
-		background-color: #fff;
+	.purchase-plan-pricing-info .sp-button {
+		background-color: transparent;
 		width: 180px;
 		height: 50px;
 		font-size: 14px;
